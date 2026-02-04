@@ -1,5 +1,7 @@
 name: run-ci
 on:
+    workflow_call:
+        
     pull_request:
         #opened is set so a CI can run when a PR is created
         #closed is set so a CI can run when a PR is merged and trigger CD workflows
