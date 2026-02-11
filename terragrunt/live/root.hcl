@@ -3,7 +3,7 @@ remote_state {
     config = {
         project = "iac-pipeline"
         bucket  = "state-store"
-        prefix = "terraform.tfstate"
+        prefix  = "${path_relative_to_include()}"
         location = "europe-west2"
     }
 }
