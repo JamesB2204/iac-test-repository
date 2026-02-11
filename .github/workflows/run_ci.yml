@@ -21,3 +21,4 @@ jobs:
         uses: JamesB2204/iac-pipeline/.github/workflows/terraform_ci.yml@develop
         with:
             branch: ${{ github.head_ref || github.ref_name }}
+            cloud_token: ${{ secrets.CLOUD_PROVIDER_SECRET }}
