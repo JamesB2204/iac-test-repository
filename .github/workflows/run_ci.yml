@@ -20,4 +20,4 @@ jobs:
     run-ci:
         uses: JamesB2204/iac-pipeline/.github/workflows/terraform_ci.yml@develop
         with:
-            branch: ${{ github.head_ref }}
+            branch: ${{ github.head_ref || github.ref_name }}
