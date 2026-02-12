@@ -16,6 +16,12 @@ on:
             - test
             - develop
 
+
+permissions:
+  actions: read
+  security-events: write
+  contents: read
+
 jobs:
     run-ci:
         uses: JamesB2204/iac-pipeline/.github/workflows/terraform_ci.yml@develop
