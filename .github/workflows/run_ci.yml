@@ -1,8 +1,14 @@
 name: run-ci
 on:
+    workflow_call:
+
     pull_request:
         #opened is set so a CI can run when a PR is created
-        #closed is set so a CI can run when a PR is merged and trigger CD workflows
+        branches:
+            - main
+            - test
+            - develop
+        types: [opened, synchronize, reopened]
     push:
         branches:
             - main
@@ -10,7 +16,17 @@ on:
             - test
             - develop
 
+
+permissions:
+  actions: read
+  security-events: write
+  contents: read
+
 jobs:
     run-ci:
-        uses: JamesB2204/iac-pipeline/.github/workflows/terraform_ci.yml@main
-    
+        uses: JamesB2204/iac-pipeline/.github/workflows/terraform_ci.yml@develop
+        with:
+            branch: ${{ github.head_ref || github.ref_name }}
+            iac_technology: "Terraform"
+        secrets:
+            cloud_token: '${{ secrets.CLOUD_PROVIDER_SECRET }}'
