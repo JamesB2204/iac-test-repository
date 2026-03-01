@@ -24,7 +24,7 @@ permissions:
 
 jobs:
     run-ci:
-        uses: JamesB2204/iac-pipeline/.github/workflows/terraform_ci.yml@develop
+        uses: iac-pipeline/iac-pipeline/.github/workflows/terraform_ci.yml@develop
         with:
             branch: ${{ github.head_ref || github.ref_name }}
             iac_technology: "Terraform"
