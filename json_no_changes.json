@@ -1,0 +1,594 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.14.4",
+  "variables": {
+    "bucket_name": {
+      "value": "test_bucket_0503"
+    },
+    "force_destroy": {
+      "value": "false"
+    },
+    "location": {
+      "value": "europe-west2"
+    },
+    "project": {
+      "value": "iac-pipeline-486415"
+    },
+    "versioning_enabled": {
+      "value": "true"
+    }
+  },
+  "planned_values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_storage_bucket.bucket",
+          "mode": "managed",
+          "type": "google_storage_bucket",
+          "name": "bucket",
+          "provider_name": "registry.terraform.io/hashicorp/google",
+          "schema_version": 4,
+          "values": {
+            "autoclass": [],
+            "cors": [],
+            "custom_placement_config": [],
+            "default_event_based_hold": false,
+            "effective_labels": {
+              "goog-terraform-provisioned": "true"
+            },
+            "enable_object_retention": false,
+            "encryption": [],
+            "force_destroy": false,
+            "hierarchical_namespace": [
+              {
+                "enabled": false
+              }
+            ],
+            "id": "test_bucket_0503",
+            "ip_filter": [],
+            "labels": {},
+            "lifecycle_rule": [],
+            "location": "EUROPE-WEST2",
+            "logging": [],
+            "name": "test_bucket_0503",
+            "project": "iac-pipeline-486415",
+            "project_number": 379193353600,
+            "public_access_prevention": "inherited",
+            "requester_pays": false,
+            "retention_policy": [],
+            "rpo": null,
+            "self_link": "https://www.googleapis.com/storage/v1/b/test_bucket_0503",
+            "soft_delete_policy": [
+              {
+                "effective_time": "2026-03-05T13:00:42.019Z",
+                "retention_duration_seconds": 604800
+              }
+            ],
+            "storage_class": "STANDARD",
+            "terraform_labels": {
+              "goog-terraform-provisioned": "true"
+            },
+            "time_created": "2026-03-05T13:00:42.019Z",
+            "timeouts": null,
+            "uniform_bucket_level_access": false,
+            "updated": "2026-03-05T13:00:42.019Z",
+            "url": "gs://test_bucket_0503",
+            "versioning": [
+              {
+                "enabled": true
+              }
+            ],
+            "website": []
+          },
+          "sensitive_values": {
+            "autoclass": [],
+            "cors": [],
+            "custom_placement_config": [],
+            "effective_labels": {},
+            "encryption": [],
+            "hierarchical_namespace": [
+              {}
+            ],
+            "ip_filter": [],
+            "labels": {},
+            "lifecycle_rule": [],
+            "logging": [],
+            "retention_policy": [],
+            "soft_delete_policy": [
+              {}
+            ],
+            "terraform_labels": {},
+            "versioning": [
+              {}
+            ],
+            "website": []
+          }
+        }
+      ]
+    }
+  },
+  "resource_drift": [
+    {
+      "address": "google_storage_bucket.bucket",
+      "mode": "managed",
+      "type": "google_storage_bucket",
+      "name": "bucket",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "update"
+        ],
+        "before": {
+          "autoclass": [],
+          "cors": [],
+          "custom_placement_config": [],
+          "default_event_based_hold": false,
+          "effective_labels": {
+            "goog-terraform-provisioned": "true"
+          },
+          "enable_object_retention": false,
+          "encryption": [],
+          "force_destroy": false,
+          "hierarchical_namespace": [
+            {
+              "enabled": false
+            }
+          ],
+          "id": "test_bucket_0503",
+          "ip_filter": [],
+          "labels": null,
+          "lifecycle_rule": [],
+          "location": "EUROPE-WEST2",
+          "logging": [],
+          "name": "test_bucket_0503",
+          "project": "iac-pipeline-486415",
+          "project_number": 379193353600,
+          "public_access_prevention": "inherited",
+          "requester_pays": false,
+          "retention_policy": [],
+          "rpo": null,
+          "self_link": "https://www.googleapis.com/storage/v1/b/test_bucket_0503",
+          "soft_delete_policy": [
+            {
+              "effective_time": "2026-03-05T13:00:42.019Z",
+              "retention_duration_seconds": 604800
+            }
+          ],
+          "storage_class": "STANDARD",
+          "terraform_labels": {
+            "goog-terraform-provisioned": "true"
+          },
+          "time_created": "2026-03-05T13:00:42.019Z",
+          "timeouts": null,
+          "uniform_bucket_level_access": false,
+          "updated": "2026-03-05T13:00:42.019Z",
+          "url": "gs://test_bucket_0503",
+          "versioning": [
+            {
+              "enabled": true
+            }
+          ],
+          "website": []
+        },
+        "after": {
+          "autoclass": [],
+          "cors": [],
+          "custom_placement_config": [],
+          "default_event_based_hold": false,
+          "effective_labels": {
+            "goog-terraform-provisioned": "true"
+          },
+          "enable_object_retention": false,
+          "encryption": [],
+          "force_destroy": false,
+          "hierarchical_namespace": [
+            {
+              "enabled": false
+            }
+          ],
+          "id": "test_bucket_0503",
+          "ip_filter": [],
+          "labels": {},
+          "lifecycle_rule": [],
+          "location": "EUROPE-WEST2",
+          "logging": [],
+          "name": "test_bucket_0503",
+          "project": "iac-pipeline-486415",
+          "project_number": 379193353600,
+          "public_access_prevention": "inherited",
+          "requester_pays": false,
+          "retention_policy": [],
+          "rpo": null,
+          "self_link": "https://www.googleapis.com/storage/v1/b/test_bucket_0503",
+          "soft_delete_policy": [
+            {
+              "effective_time": "2026-03-05T13:00:42.019Z",
+              "retention_duration_seconds": 604800
+            }
+          ],
+          "storage_class": "STANDARD",
+          "terraform_labels": {
+            "goog-terraform-provisioned": "true"
+          },
+          "time_created": "2026-03-05T13:00:42.019Z",
+          "timeouts": null,
+          "uniform_bucket_level_access": false,
+          "updated": "2026-03-05T13:00:42.019Z",
+          "url": "gs://test_bucket_0503",
+          "versioning": [
+            {
+              "enabled": true
+            }
+          ],
+          "website": []
+        },
+        "after_unknown": {},
+        "before_sensitive": {
+          "autoclass": [],
+          "cors": [],
+          "custom_placement_config": [],
+          "effective_labels": {},
+          "encryption": [],
+          "hierarchical_namespace": [
+            {}
+          ],
+          "ip_filter": [],
+          "lifecycle_rule": [],
+          "logging": [],
+          "retention_policy": [],
+          "soft_delete_policy": [
+            {}
+          ],
+          "terraform_labels": {},
+          "versioning": [
+            {}
+          ],
+          "website": []
+        },
+        "after_sensitive": {
+          "autoclass": [],
+          "cors": [],
+          "custom_placement_config": [],
+          "effective_labels": {},
+          "encryption": [],
+          "hierarchical_namespace": [
+            {}
+          ],
+          "ip_filter": [],
+          "labels": {},
+          "lifecycle_rule": [],
+          "logging": [],
+          "retention_policy": [],
+          "soft_delete_policy": [
+            {}
+          ],
+          "terraform_labels": {},
+          "versioning": [
+            {}
+          ],
+          "website": []
+        }
+      }
+    }
+  ],
+  "resource_changes": [
+    {
+      "address": "google_storage_bucket.bucket",
+      "mode": "managed",
+      "type": "google_storage_bucket",
+      "name": "bucket",
+      "provider_name": "registry.terraform.io/hashicorp/google",
+      "change": {
+        "actions": [
+          "no-op"
+        ],
+        "before": {
+          "autoclass": [],
+          "cors": [],
+          "custom_placement_config": [],
+          "default_event_based_hold": false,
+          "effective_labels": {
+            "goog-terraform-provisioned": "true"
+          },
+          "enable_object_retention": false,
+          "encryption": [],
+          "force_destroy": false,
+          "hierarchical_namespace": [
+            {
+              "enabled": false
+            }
+          ],
+          "id": "test_bucket_0503",
+          "ip_filter": [],
+          "labels": {},
+          "lifecycle_rule": [],
+          "location": "EUROPE-WEST2",
+          "logging": [],
+          "name": "test_bucket_0503",
+          "project": "iac-pipeline-486415",
+          "project_number": 379193353600,
+          "public_access_prevention": "inherited",
+          "requester_pays": false,
+          "retention_policy": [],
+          "rpo": null,
+          "self_link": "https://www.googleapis.com/storage/v1/b/test_bucket_0503",
+          "soft_delete_policy": [
+            {
+              "effective_time": "2026-03-05T13:00:42.019Z",
+              "retention_duration_seconds": 604800
+            }
+          ],
+          "storage_class": "STANDARD",
+          "terraform_labels": {
+            "goog-terraform-provisioned": "true"
+          },
+          "time_created": "2026-03-05T13:00:42.019Z",
+          "timeouts": null,
+          "uniform_bucket_level_access": false,
+          "updated": "2026-03-05T13:00:42.019Z",
+          "url": "gs://test_bucket_0503",
+          "versioning": [
+            {
+              "enabled": true
+            }
+          ],
+          "website": []
+        },
+        "after": {
+          "autoclass": [],
+          "cors": [],
+          "custom_placement_config": [],
+          "default_event_based_hold": false,
+          "effective_labels": {
+            "goog-terraform-provisioned": "true"
+          },
+          "enable_object_retention": false,
+          "encryption": [],
+          "force_destroy": false,
+          "hierarchical_namespace": [
+            {
+              "enabled": false
+            }
+          ],
+          "id": "test_bucket_0503",
+          "ip_filter": [],
+          "labels": {},
+          "lifecycle_rule": [],
+          "location": "EUROPE-WEST2",
+          "logging": [],
+          "name": "test_bucket_0503",
+          "project": "iac-pipeline-486415",
+          "project_number": 379193353600,
+          "public_access_prevention": "inherited",
+          "requester_pays": false,
+          "retention_policy": [],
+          "rpo": null,
+          "self_link": "https://www.googleapis.com/storage/v1/b/test_bucket_0503",
+          "soft_delete_policy": [
+            {
+              "effective_time": "2026-03-05T13:00:42.019Z",
+              "retention_duration_seconds": 604800
+            }
+          ],
+          "storage_class": "STANDARD",
+          "terraform_labels": {
+            "goog-terraform-provisioned": "true"
+          },
+          "time_created": "2026-03-05T13:00:42.019Z",
+          "timeouts": null,
+          "uniform_bucket_level_access": false,
+          "updated": "2026-03-05T13:00:42.019Z",
+          "url": "gs://test_bucket_0503",
+          "versioning": [
+            {
+              "enabled": true
+            }
+          ],
+          "website": []
+        },
+        "after_unknown": {},
+        "before_sensitive": {
+          "autoclass": [],
+          "cors": [],
+          "custom_placement_config": [],
+          "effective_labels": {},
+          "encryption": [],
+          "hierarchical_namespace": [
+            {}
+          ],
+          "ip_filter": [],
+          "labels": {},
+          "lifecycle_rule": [],
+          "logging": [],
+          "retention_policy": [],
+          "soft_delete_policy": [
+            {}
+          ],
+          "terraform_labels": {},
+          "versioning": [
+            {}
+          ],
+          "website": []
+        },
+        "after_sensitive": {
+          "autoclass": [],
+          "cors": [],
+          "custom_placement_config": [],
+          "effective_labels": {},
+          "encryption": [],
+          "hierarchical_namespace": [
+            {}
+          ],
+          "ip_filter": [],
+          "labels": {},
+          "lifecycle_rule": [],
+          "logging": [],
+          "retention_policy": [],
+          "soft_delete_policy": [
+            {}
+          ],
+          "terraform_labels": {},
+          "versioning": [
+            {}
+          ],
+          "website": []
+        }
+      }
+    }
+  ],
+  "prior_state": {
+    "format_version": "1.0",
+    "terraform_version": "1.14.4",
+    "values": {
+      "root_module": {
+        "resources": [
+          {
+            "address": "google_storage_bucket.bucket",
+            "mode": "managed",
+            "type": "google_storage_bucket",
+            "name": "bucket",
+            "provider_name": "registry.terraform.io/hashicorp/google",
+            "schema_version": 4,
+            "values": {
+              "autoclass": [],
+              "cors": [],
+              "custom_placement_config": [],
+              "default_event_based_hold": false,
+              "effective_labels": {
+                "goog-terraform-provisioned": "true"
+              },
+              "enable_object_retention": false,
+              "encryption": [],
+              "force_destroy": false,
+              "hierarchical_namespace": [
+                {
+                  "enabled": false
+                }
+              ],
+              "id": "test_bucket_0503",
+              "ip_filter": [],
+              "labels": {},
+              "lifecycle_rule": [],
+              "location": "EUROPE-WEST2",
+              "logging": [],
+              "name": "test_bucket_0503",
+              "project": "iac-pipeline-486415",
+              "project_number": 379193353600,
+              "public_access_prevention": "inherited",
+              "requester_pays": false,
+              "retention_policy": [],
+              "rpo": null,
+              "self_link": "https://www.googleapis.com/storage/v1/b/test_bucket_0503",
+              "soft_delete_policy": [
+                {
+                  "effective_time": "2026-03-05T13:00:42.019Z",
+                  "retention_duration_seconds": 604800
+                }
+              ],
+              "storage_class": "STANDARD",
+              "terraform_labels": {
+                "goog-terraform-provisioned": "true"
+              },
+              "time_created": "2026-03-05T13:00:42.019Z",
+              "timeouts": null,
+              "uniform_bucket_level_access": false,
+              "updated": "2026-03-05T13:00:42.019Z",
+              "url": "gs://test_bucket_0503",
+              "versioning": [
+                {
+                  "enabled": true
+                }
+              ],
+              "website": []
+            },
+            "sensitive_values": {
+              "autoclass": [],
+              "cors": [],
+              "custom_placement_config": [],
+              "effective_labels": {},
+              "encryption": [],
+              "hierarchical_namespace": [
+                {}
+              ],
+              "ip_filter": [],
+              "labels": {},
+              "lifecycle_rule": [],
+              "logging": [],
+              "retention_policy": [],
+              "soft_delete_policy": [
+                {}
+              ],
+              "terraform_labels": {},
+              "versioning": [
+                {}
+              ],
+              "website": []
+            }
+          }
+        ]
+      }
+    }
+  },
+  "configuration": {
+    "provider_config": {
+      "google": {
+        "name": "google",
+        "full_name": "registry.terraform.io/hashicorp/google"
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "google_storage_bucket.bucket",
+          "mode": "managed",
+          "type": "google_storage_bucket",
+          "name": "bucket",
+          "provider_config_key": "google",
+          "expressions": {
+            "force_destroy": {
+              "references": [
+                "var.force_destroy"
+              ]
+            },
+            "location": {
+              "references": [
+                "var.location"
+              ]
+            },
+            "name": {
+              "references": [
+                "var.bucket_name"
+              ]
+            },
+            "project": {
+              "references": [
+                "var.project"
+              ]
+            },
+            "versioning": [
+              {
+                "enabled": {
+                  "references": [
+                    "var.versioning_enabled"
+                  ]
+                }
+              }
+            ]
+          },
+          "schema_version": 4
+        }
+      ],
+      "variables": {
+        "bucket_name": {},
+        "force_destroy": {},
+        "location": {},
+        "project": {},
+        "versioning_enabled": {}
+      }
+    }
+  },
+  "timestamp": "2026-03-05T13:03:34Z",
+  "applyable": false,
+  "complete": true,
+  "errored": false
+}
