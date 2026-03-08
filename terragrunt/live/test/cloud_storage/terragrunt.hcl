@@ -6,7 +6,7 @@ inputs = {
   bucket_name        = "test_bucket_0503"
   location           = "europe-west2"
   force_destroy      = false
-  versioning_enabled = false
+  versioning_enabled = true
   project            = "iac-pipeline-486415"
 }
 
