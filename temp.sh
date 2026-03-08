@@ -4,7 +4,7 @@
 lower_environment="dev"
 higher_environment="dev"
 
-echo "Checking for drift between ${{ inputs.branch }} and ${{ inputs.higher_branch }} for environment: $environment"
+echo "Checking for drift between develop and main for environment: $environment"
 
 check_module_status() {
 local changes_modules_to_check="$1"
@@ -40,7 +40,7 @@ done
 }
 
 
-git checkout ${{ inputs.branch }}
+git checkout develop
 
 # locates the modules that has been changed in the lower environment
 # this is to check if there is any drift for the changed modules
@@ -60,7 +60,7 @@ else
 
         echo "Modules changed: $modules_changed"
 
-        git checkout ${{ inputs.higher_branch }}
+        git checkout main
 
         echo "Checking drift for modules: $modules_changed"
         
@@ -68,7 +68,7 @@ else
         if check_module_status "$modules_changed" "$higher_environment"; then
             echo "No drift detected"
         else
-            echo "Drift detected between ${{ inputs.branch }} and ${{ inputs.higher_branch }} for environment: $environment"
+            echo "Drift detected between develop and main for environment: $environment"
             exit 1
         fi
     fi
