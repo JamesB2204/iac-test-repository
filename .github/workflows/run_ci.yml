@@ -28,5 +28,9 @@ jobs:
         with:
             branch: ${{ github.head_ref || github.ref_name }}
             iac_technology: "Terraform"
+            environments: |
+                develop: dev
+                test: test
+                prod: main
         secrets:
             cloud_token: '${{ secrets.CLOUD_PROVIDER_SECRET }}'
