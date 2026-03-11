@@ -9,12 +9,6 @@ on:
             - test
             - develop
         types: [opened, synchronize, reopened]
-    push:
-        branches:
-            - main
-            - release/*
-            - test
-            - develop
 
 
 permissions:
@@ -26,7 +20,6 @@ jobs:
     run-ci:
         uses: iac-pipeline/iac-pipeline/.github/workflows/terraform_ci.yml@develop
         with:
-            branch: ${{ github.head_ref || github.ref_name }}
             iac_technology: "Terraform"
             environments: |
                 develop: dev
