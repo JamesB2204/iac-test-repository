@@ -7,6 +7,7 @@ inputs = {
   location           = "europe-west2"
   force_destroy      = false
   versioning_enabled = true
+  project            = "iac-pipeline-486415"
 }
 
 include {
